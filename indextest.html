@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+.body{
+display: flex;
+justify-content: center;
+margin-left: auto;
+margin-right: auto;
+}
+.navbar {
+background-color:black;
+align-items: center;
+
+}
+.navbar-item{
+color:whitesmoke;
+text-transform: uppercase;
+padding-left: 70px;
+}
+.footer-item{
+    padding-top: 50px ;
+    padding-left: 60px;
+}
+.hero .hero-body{
+background-image:radial-gradient(100% 1000% at 10% 20%, #000000 0%, rgba(0, 0, 0, 0.435) 100%), url(file:///C:/Users/Ivan%20Ott/Downloads/photo%202044387907.svg);
+background-position: center center;
+background-repeat:  no-repeat;
+background-attachment: fixed;
+background-size:  cover;
+background-color: #999;
+border-color: #999;
+}
+span{
+color: red;
+}
+.title{
+font-size: 80px;
+color: white;
+padding-bottom: 75px;
+padding-left: 80px;
+}
+
+.subtitle{
+font-size: 17px;
+color: white;
+padding-left: 80px;
+}
+.button{
+border-radius: 0%;
+width: 352px;
+height: 58px;
+padding: 19px 53px;
+margin-top: 72px;
+margin-left: 80px;
+background-color: #FF0000;
+border: none;
+color: white;
+
+}
+.cards{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-auto-rows: auto;
+grid-gap: 22px;
+margin-top: 70px;
+flex-shrink: 0;
+margin-bottom: 70px;
+
+}
+.card{
+width: 379px;
+height: 509px;
+background-color: #FFF8F8;
+
+
+}
+
+.card .header {
+color: #000;
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: 88.6%; /* 44.3px */ 
+margin-bottom: 40px;
+margin-top: 35px;
+}
+.card .card-content{
+color: var(--Text, #3A3A3A);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 190%; /* 30.4px */
+margin-left: 41px;
+width: 287px ;
+height: 150px;
+}
+.card .Cardbutton{
+display: inline-flex;
+padding: 19px 90px;
+align-items: flex-start;
+gap: 10px;
+background-color:  #FFF8F8;
+margin-top: 46px;
+margin-right: 50px;
+}
+.myhero2{
+background: #010101;;
+}
+.myhero3 .hero-body{
+background: #010101;;
+}
+
+.myhero3 .title{
+font-size: 50px;
+font-style: normal;
+font-weight: 800;
+line-height: 88.567%; /* 44.283px */
+margin-top: -250px;
+}
+
+.myhero3 .container1 {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: 400px;
+}
+.myhero3 .text3{
+font-size: 35px;
+font-style: normal;
+font-weight: 600;
+line-height: 36px; /* 30.998px */ 
+padding: 20px;  
+margin-top: 40px;
+}
+.myhero3 .img{
+padding-top: 30px;
+
+}
+.myhero3 .subtext{
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 178.567%; /* 32.142px */
+margin-left: 75px;
+}
+
+.float-container {
+border: 3px solid #fff;
+padding: 20px;
+}
+
+
+
+.myhero3 .card {
+height: 200px;
+
+display: flex;
+margin-bottom: 200px;
+background-color: #010101;
+margin-top: 60px;
+
+}
+
+.myhero3 .card img {
+max-width: 80px;
+padding-left: 20px;
+
+
+}
+.card-field{
+display: flex;
+flex: auto;
+justify-content: center;
+}
+
+.myhero3 .card-content {
+flex-grow: 1;
+padding-right: 20px;
+color: #fff;
+
+}
+
+
+.myhero3 .card .content {
+font-size: 35px;
+font-style: normal;
+font-weight: 600;
+line-height: 36px; 
+display: flex;
+flex-direction: row;
+
+}
+.myhero3 .cards{
+height: 150px;
+max-width: 100%;
+}
+.myhero3 .card .sub_cont{
+min-width: 300px;
+}
+.black-container{
+display: flex;
+flex: auto;
+justify-content: center;
+background-color:#010101 ;
+width: 100%;
+
+}
+.black-container h1{
+color: #fff;
+font-size: 50px;
+font-style: normal;
+font-weight: 800;
+line-height: 88.567%; /* 44.283px */
+padding-top: 111px;
+margin-left: 60px;
+}
+
+.number-row{
+display: flex;
+flex-direction: row;
+gap: 24px;
+align-items: center;
+
+}
+.myhero3 .span-style{
+color: #F00;
+
+text-align: center;
+
+font-size: 55.641px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+}
+.number-row-title{
+min-width: 300px;
+color:  #FFF8F8;
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: 88.567%; /* 22.142px */
+}
+
+.number-row-desc{
+color: #FFF8F8;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 178.567%; /* 32.142px */
+margin-left: 75px;
+}
+.button-row{
+display: flex;
+padding-top: 100px;
+justify-content: center;
+padding-bottom: 137px;
+}
+.cost-button{
+padding: 19px 53px;
+background-color: #F00;
+color: #FFF;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.8px;
+text-transform: uppercase;
+border: none;
+}
+.card-layout{
+padding-left: 70px;
+}
+
+.collage-section {
+position: relative;
+width: 100vw;
+height: 700px;
+overflow: hidden;
+}
+
+.image-container {
+position: absolute;
+
+overflow: hidden;
+}
+
+.image-container img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.image-1 {right: 300px; width: 600px; top: 100px; }
+.image-2 {right: 350px;top: 400px;  }
+.image-3 { right: 700px; width: 250px; top: 80px;}
+.image-4 { right: 100px; width: 300px; top: 150px; }
+
+.overlay {
+padding-left: 50px;
+position: absolute;
+top: 0;
+left: 0;
+width: 660px;
+height: 400px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+left: 200px;
+top: 200px;
+z-index: 6;
+color: rgb(0, 0, 0);
+background: #FFF8F8;
+box-shadow: 0px 26px 76px 0px rgba(12, 22, 36, 0.16);
+
+}
+.overlay h1 {
+flex-direction: column;
+color: #000;
+font-size: 30px;
+font-style: normal;
+font-weight: 800;
+line-height: 137.187%; /* 41.156px */
+padding-left: 30px;
+padding-bottom: 21px;
+
+}
+
+.overlay p {
+color: var(--Text, #3A3A3A);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+padding-left: 30px;
+padding-bottom: 28px;
+
+}
+.button-overlay{
+max-width: 306px;
+padding: 20px 53px;
+padding-right:20px;
+background-color: #F00;
+color: #FFF;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+margin-left: 30px;    
+letter-spacing: 0.8px;
+text-transform: uppercase;
+
+}
+.grid-section{
+
+align-content: center;
+background-color:#000000;
+width: 100%;
+height: 1124px;
+flex-shrink: 0;
+}
+.grid-layout{
+  
+  height: 100%;
+  width: 100%;
+}
+.grid-layout h1{
+color: #FFF;
+font-size: 50px;
+font-style: normal;
+font-weight: 800;
+line-height: 88.567%; /* 44.283px */
+padding-left: 40px;
+padding-top: 40px;
+}
+.grids{
+  padding-left: 40px;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+  margin: 20px auto;
+  background-color:#000000;
+  display:grid;
+  grid-template-columns: 582px 582px;
+  grid-row: 374px 374px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.g-content{
+  width: 587px;
+  height: 374px;
+}
+
+.g-content h1{
+color: #FAFAFA;
+font-size: 22.775px;
+font-style: normal;
+font-weight: 800;
+line-height: 130%; /* 29.607px */
+}
+.g-content p{
+color: #FFF;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 170%; /* 27.2px */
+}
+
+
+.grid-but{
+background-color: #00000000;
+display: inline-flex;
+border:1px solid white;
+padding: 19px 53px;
+align-items: center;
+gap: 5px;
+color: #FFF;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.8px;
+text-transform: uppercase;
+margin-left: 1px;
+}
+.but-move{
+  padding-left: 900px;
+  padding-top: -80px;
+}
+.kartina-box h1{
+  margin-left: 120px;
+  color: #050505;
+font-size: 50px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+ 
+}
+.kartina{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+.button-kartina{
+margin-bottom: 30px;
+border-radius: 0%;
+width: 352px;
+height: 58px;
+padding: 19px 53px;
+margin-top: 72px;
+background-color: #FF0000;
+border: none;
+color: white;
+margin-left:470px ;
+}
+
+/* .section-cont{
+  display: flex;
+  flex-direction: row;
+  background-color: #010101;
+  align-items: center;
+}
+.form-cont{
+  width: 600px;
+  height: auto;
+  background-color: #010101;
+ 
+}
+
+.form-msg
+{
+  width: 800px;
+  grid-row: 3/1;
+}
+.form-msg input
+{
+  display: flex;
+  width: 400px;
+  
+  
+}
+.form-msg h1{
+padding-top: 50px;
+color: #FFF;
+font-size: 50px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
+.form-msg p{
+padding-top: 20px;
+color: #FFF;
+font-size: 25px;
+font-style: normal;
+font-weight: 500;
+line-height: 33.943px; /* 135.771% */
+/* } */
+
+/* .msg-input{ 
+  display: flex;
+   padding-left: 300px;
+  margin-top: 170px;
+  width: 4000px;
+}  */
+.section-cont{
+  background-color: #010101;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border-bottom: 1px solid #010101;
+  outline: auto;
+  border-radius: 4px;
+  resize: vertical;
+  background-color: #010101;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color: #FAFAFA;
+  
+}
+
+input[type=submit] {
+  color: white;
+  background-color: #010101;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #F00;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #010101;
+  padding: 20px;
+}
+
+.container h1 {
+padding-top: 50px;
+color: #FFF;
+font-size: 50px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
+
+.container p{
+padding-top: 20px;
+color: #FFF;
+font-size: 25px;
+font-style: normal;
+font-weight: 500;
+line-height: 33.943px; /* 135.771% */
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  color: #ccc;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+  background-color: #FFF;
+  
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+
+
+.grid-section-last{
+align-content: center;
+background-color:white;
+width: 100%;
+height: 1124px;
+flex-shrink: 0;
+}
+.grid-layout-last{
+  
+  height: 100%;
+  width: 100%;
+}
+.grid-layout-last h1{
+color: black;
+font-size: 50px;
+font-style: normal;
+font-weight: 800;
+line-height: 88.567%; /* 44.283px */
+padding-left: 40px;
+padding-top: 40px;
+padding-bottom: 20px;
+}
+.grids-last{
+  padding-left: 40px;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+  
+  background-color:white;
+  display:grid;
+  grid-template-columns: 582px 582px;
+  grid-row: 374px 374px;
+  
+}
+.g-content-last{
+  width: 585px;
+  height: 540px;
+}
+
+.g-content-last h1{
+color: black;
+font-size: 22.775px;
+font-style: normal;
+font-weight: 800;
+line-height: 130%; /* 29.607px */
+}
+.g-content-last p{
+color: #FFF;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 170%; /* 27.2px */
+}
+
+
+.grid-but-last{
+background-color:black;
+display: inline-flex;
+border:1px solid black;
+padding: 19px 53px;
+align-items: center;
+gap: 5px;
+color: black;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.8px;
+text-transform: uppercase;
+}
+
+li{
+  margin: 50px 0;
+  
+}
+ul li::before{
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  
+  
+}
+.li-button{
+position: relative;
+padding: 19px 53px;
+background-color: #F00;
+color: #FFF;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.8px;
+text-transform: uppercase;
+border: none;
+margin-left: 140px;
+bottom: 100px;
+}
+.li-button2{
+position: relative;
+padding: 19px 53px;
+background-color: #F00;
+color: #FFF;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.8px;
+text-transform: uppercase;
+border: none;
+margin-left: 180px;
+bottom: 70px;
+}
+a, a:hover, a:visited, a:active {
+  color: inherit;
+  text-decoration: none;
+ }
+
+::placeholder{
+  color: #FFF8F8;
+}
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: red;
+}
+input:required {
+  
+  border-width: 4px;
+}
+
+input:required:invalid {
+  border-width: 6px;
+  border-color: #dc0404;
+}
+
+
+</style>
+<body>
+  <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item">
+        <img src="file:///C:/Users/Ivan%20Ott/Downloads/Group%20108.svg" width="150" height="280">
+      </a>
+  
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">
+          Услуги
+        </a>
+  
+        <a class="navbar-item">
+          Цены
+        </a>
+        <a class="navbar-item">
+          Портфолио
+        </a>
+        <a class="navbar-item">
+          Контакты
+        </a>
+        <a class="navbar-item">
+          +373-69910767
+        </a>
+        <a class="navbar-item">
+          заказать звонок
+        </a>
+  
+    </div>
+  </nav>
+  <section class="hero is-fullheight">
+
+    <div class="hero-body">
+      <div class="titlerofl">
+        <p class="title">
+          Разработка <span>Сайтов</span><br>
+          для бизнеса
+        </p>  
+        <p class="subtitle">
+          Проектирование, разработка, тестирование и поддержка интернет-магазинов, веб-сервисов, приложений, продающих<br> и корпоративных сайтов
+        </p>
+
+        <button class="button"><a href="C:\Users\Ivan Ott\Desktop\uchebka\Verstka_1\survey.html">РАССЧИТАТЬ СТОИМОСТЬ</a></button>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="hero myhero1 is-medium">
+    <div class="card-field">
+     <div class="cards">
+      <div class="card">
+        <div class="card-content">
+          <div class="header">
+            Интернет<br>магазины
+          </div>
+          <div class="content">
+            Позволяют увеличить число покупателей,предложив им возможность дистанционного заказа и доставки товаров по месту назначения.
+          </div>
+          <button class="Cardbutton"><a href="C:\Users\Ivan Ott\Desktop\uchebka\Verstka_1\link0.html">ПОДРОБНЕЕ</a></button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="header">
+            Сайты<br>компаний
+          </div>
+          <div class="content">
+          Представляют компанию в сети интернет, формируют имидж среди потенциальных партнеров, знакомят с услугами  и товарами компании.
+          </div>
+          <button class="Cardbutton"><a href="C:\Users\Ivan Ott\Desktop\uchebka\Verstka_1\link1.html">ПОДРОБНЕЕ</a></button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="header">
+            Landing<br>Page
+          </div>
+          <div class="content">
+            Разарабатывается для продажи какой-либо одной услуги или небольшого количества товаров для целевой аудитории.
+          </div>
+          <button class="Cardbutton"><a href="C:\Users\Ivan Ott\Desktop\uchebka\Verstka_1\img\link2.html">ПОДРОБНЕЕ</a></button>
+        </div>
+      </div>
+     </div>
+    </div>
+  </section>
+  <section class="hero myhero3 is-fullheight">
+
+    <div class="black-container"> 
+        <div class="card-layout"> 
+            <h1>Грамотно разработанный <span>сайт</span></h1>
+        
+            <div class="cards">
+              <div class="card">
+                <div class="card-content">
+                  
+                  <div class="content">
+                      <div>Увеличит Продажи</div>
+                      <img src="file:///C:/Users/Ivan%20Ott/Downloads/001-variable.svg" alt="Изображение карточки 1">
+                  </div>
+                  <div class="sub_cont">
+                      В интернет-магазине количество потенциальных клиентов намного больше, чем в оффлайне
+                  </div>
+                </div>
+                
+              </div>
+      
+              <div class="card">
+                <div class="card-content">
+                 
+                  <div class="content">
+                      <div>Поднимет Имидж</div>
+                      <img src="file:///C:/Users/Ivan%20Ott/Downloads/002-wheel.svg" alt="Изображение карточки 1">
+                  </div>
+                  <div class="sub_cont">
+                    Сайт формирует лицо компании, узнаваемость бренда, содает положительное восприятие продуктов компании у потребителя
+                  </div>
+                </div>
+                
+              </div>
+      
+              <div class="card">
+                <div class="card-content">
+                 
+                  <div class="content">
+                      <div>Повысит Лояльность </div>
+                      <img src="file:///C:/Users/Ivan%20Ott/Downloads/003-data-analytics.svg" alt="Изображение карточки 1">
+                  </div>
+                  <div class="sub_cont">
+                    Сайт упрощает коммуникацию с клиентами. Позволяет понять, что им интересно и важно.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h1>Мы гарантируем</h1>
+           <div style="margin-left: 100px ; margin-top: 50px;">
+            <div class="number-row"><span class="span-style">01</span><div class="number-row-title">Фиксированную цену</div><p class="number-row-desc">Цена за проект не изменится в процессе разработки.</p></div>
+            <div class="number-row"><span class="span-style">02</span><div class="number-row-title">Соблюдение сроков</div><p class="number-row-desc">Проект всегда будет реализован в оговоренные сроки.</p></div>
+            <div class="number-row"><span class="span-style">03</span><div class="number-row-title">Высокое качество</div><p class="number-row-desc">Мы гарантируем, что Ваш сайт будет уникальным и будет соответствовать всем требованиям качественной разработки.</p></div>
+           </div>
+           <div class="button-row">
+            <button class="cost-button"><a href="C:\Users\Ivan Ott\Desktop\uchebka\Verstka_1\survey.html">Узнать Стоимость разработки сайта</a></button>
+           </div>
+            
+        </div>
+       
+
+    </div>
+</section>
+
+  <section class="collage-section">
+    <div class="image-container image-1">
+      <img src="file:///C:/Users/Ivan%20Ott/Downloads/image%2053.svg" alt="Image 1">
+    </div>
+    <div class="image-container image-2">
+      <img src="file:///C:/Users/Ivan%20Ott/Downloads/image%2057.svg" alt="Image 2">
+    </div>
+    <div class="image-container image-3">
+      <img src="file:///C:/Users/Ivan%20Ott/Downloads/image%2058.svg" alt="Image 3">
+    </div>
+    <div class="image-container image-4">
+      <img src="file:///C:/Users/Ivan%20Ott/Downloads/image%2059.svg" alt="Image 4">
+    </div>
+    <div class="overlay">
+      <h1>Узнайте предварительную <span>цену</span> на разработку сайта</h1>
+      <p>Ответьте на 3 коротких вопроса за 20 секунд и получите предварительный расчет стоимости разработки сайта. 
+        А также скидку 10% на будущую разработку.</p>
+      <a href="C:\Users\Ivan Ott\Desktop\uchebka\Verstka_1\survey.html" class="button-overlay">Расчет стоимости</a>
+    </div>
+  </section>
+
+
+
+<section class="grid-section">
+  <div class="container-grid">
+    <div class="grid-layout">
+      <h1>Портфолио <span>проектов</span></h1>
+      <div class="grids">
+        <div class="grid">
+          <div class="grid-content">
+            <div class="g-content" style="background-image: url(file:///C:/Users/Ivan%20Ott/Downloads/Rectangle%20101.svg);">
+                <img src="file:///C:/Users/Ivan%20Ott/Downloads/TIG.svg" alt="">
+                <h1>Termo Inox Grup</h1>
+                <p>Корпоративный сайт для промышленной компании, которая занимается производством емкостей для пищевой промышленности</p>
+                
+            </div>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="grid-content">
+            <div class="g-content" style="background-image: url(file:///C:/Users/Ivan%20Ott/Downloads/Frame%2065%203.svg);">
+              
+            </div>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="grid-content">
+            <div class="g-content" style="background-image: url(file:///C:/Users/Ivan%20Ott/Downloads/Rectangle%20106.svg);">
+            
+            </div>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="grid-content">
+            <div class="g-content" style="background-image: url(C:/Users/Ivan%20Ott/Downloads/lkz%202.svg);">
+            
+            </div>
+          </div>
+        </div>
+        
+      </div>
+     
+    </div>
+  </div>
+  <div class="but-move"><button class="button grid-but">Посмотреть еще</button></div>
+</section>
+<section>
+  <div class="kartina-box">
+    <h1><span>Ход работ</span> по проекту</h1>
+    <div class="kartina">
+    <img src="C:\Users\Ivan Ott\Downloads\Снимок экрана 2023-12-20 160159.png" alt="">
+    </div>
+    <button class="button-kartina"><a href="C:\Users\Ivan Ott\Desktop\uchebka\Verstka_1\img\survey.html">РАССЧИТАТЬ СТОИМОСТЬ</a></button>
+  </div>
+</section>
+
+<section class="section-cont">
+  <!-- <div class="form-cont">
+    <div class="form-msg">
+      <h1>Давайте обсудим Ваш <span>проект</span></h1>
+      <p>Объясните нам свой проект, и мы свяжемся с Вами 
+        сразу же как сделаем расчет.</p>
+    
+      
+      <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+    
+      
+      <input type="tel" id="phone" name="phone" placeholder="Введите номер телефона" required>
+    
+      
+      <input type="email" id="email" name="email" placeholder="Введите вашу почту" required>
+    </div>
+  </div>
+  <div class="msg-cont">
+    <div class="msg-input">
+     
+      <textarea id="message" name="message" placeholder="Введите ваше сообщение" required></textarea>
+    </div> -->
+    <div class="container">
+      <h1>Давайте обсудим Ваш <span>проект</span></h1>
+      <p>Объясните нам свой проект, и мы свяжемся с Вами 
+        сразу же как сделаем расчет.</p>
+      <form >
+      <div class="row" >
+        <div class="col-25">
+          <label for="fname">Имя</label>
+        </div>
+        <div class="col-75">
+          <input style="color: white;" type="text" id="fname" name="firstname" placeholder="Имя">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Почта</label>
+        </div>
+        <div class="col-75">
+          <input style="color: white;" type="text" id="lname" name="lastname" placeholder="Адрес почты" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="country">Телефон</label>
+        </div>
+        <div class="col-75">
+          <input style="color: white;" type="text" id="lname" name="lastname" placeholder="Номер телефона" required>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Требования</label>
+        </div>
+        <div class="col-75">
+          <textarea style="color: white;" id="subject" name="subject" placeholder="Опишите кратко, что Вам нужно" style="height:200px" ></textarea>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <input style="color: white;"   type="submit" value="Отправить">
+      </div>
+      </form>
+    </div>
+</section>
+<section class="grid-section-last">
+  <div class="container-grid-last">
+    <div class="grid-layout-last">
+      <h1>Портфолио <span>проектов</span></h1>
+      <div class="grids-last">
+        <div class="grid-last">
+          <div class="grid-content-last">
+            <div class="g-content-last" style="background-image: url(file:///C:/Users/Ivan%20Ott/Downloads/Rectangle%2068.svg);">
+                
+            </div>
+          </div>
+        </div>
+        <div class="grid-last">
+          <div class="grid-content">
+            <div class="g-content-last" style="">
+              <h1 
+              style="color: #000;
+              font-size: 38.622px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              text-align: center;">
+              Маркетинг и <br> продвижение</h1>
+              <ul style="margin-left: 42px;
+              list-style-type: none;
+              padding-left:140px;
+              text-align: left;
+              color: var(--Text, #3A3A3A);
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;">
+                <li>Поисковая оптимизация</li>
+                <li>Уникальный контент</li>
+                <li>Контекстная  и банерная реклама</li>
+                <li>Продвижение в соцсетях</li>
+              </ul>
+              <div ><button class="button li-button"><a href="C:\Users\Ivan Ott\Desktop\uchebka\Verstka_1\link3.html">заказать продвижение</a></button></div> 
+              
+            </div>
+          </div>
+        </div>
+        <div class="grid-last">
+          <div class="grid-content">
+            <div class="g-content-last" style="">
+              <h1 
+              style="color: #000;
+              font-size: 38.622px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              text-align: center;">
+              Дизайн</h1>
+              <ul style="margin-left: 42px;
+              list-style-type: none;
+              padding-left:140px;
+              text-align: left;
+              color: var(--Text, #3A3A3A);
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;">
+                <li>Разработка корпоративного стиля</li>
+                <li>Разработка логотипа</li>
+                <li>Уникальный дизайн для Вашего сайта</li>
+              </ul>
+              <div ><button class="button li-button2"><a href="C:\Users\Ivan Ott\Desktop\uchebka\Verstka_1\link4.html">заказать разработку</a></button></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-last">
+          <div class="grid-content-last">
+            <div class="g-content-last" style="background-image: url(file:///C:/Users/Ivan%20Ott/Downloads/Rectangle%2066.svg);">
+            
+            </div>
+          </div>
+        </div>
+        
+      </div>
+     
+    </div>
+  </div>
+  <div class="but-move-last"><button class="button grid-but">Посмотреть еще</button></div>
+</section>
+
+</section>
+<footer class="navbar footer is-transparent">
+  <div class="navbar">
+      <a class="navbar-item">
+        <img src="file:///C:/Users/Ivan%20Ott/Downloads/Group%20108.svg" width="150" height="280">
+      </a>
+  
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item footer-item">
+          Услуги
+        </a>
+  
+        <a class="navbar-item footer-item">
+          Цены
+        </a>
+        <a class="navbar-item footer-item">
+          Портфолио
+        </a>
+        <a class="navbar-item footer-item">
+          Контакты
+        </a>
+        <a class="navbar-item footer-item">
+          <i style="font-size:24px" class="fa">&#xf2c6;</i>
+        </a>
+        <a class="navbar-item footer-item">
+          <i style="font-size:24px" class="fa">&#xf09a;</i>
+        </a>
+        <a class="navbar-item footer-item">
+          <i style="font-size:24px" class="fa">&#xf16d;</i>
+        </a>
+      </div>
+    </div>
+</footer>
+</body>
+</html>

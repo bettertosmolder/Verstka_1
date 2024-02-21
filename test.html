@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Section</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    textarea {
+      height: 150px;
+    }
+  </style>
+</head>
+<body>
+
+  <section>
+    <h1>Заголовок секции</h1>
+    <p>Описание или подзаголовок</p>
+
+    <label for="name">Имя:</label>
+    <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+
+    <label for="phone">Телефон:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Введите номер телефона" required>
+
+    <label for="email">Почта:</label>
+    <input type="email" id="email" name="email" placeholder="Введите вашу почту" required>
+
+    <label for="message">Текст сообщения:</label>
+    <textarea id="message" name="message" placeholder="Введите ваше сообщение" required></textarea>
+  </section>
+
+</body>
+</html>
